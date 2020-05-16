@@ -128,9 +128,9 @@
 			<a class="btn btn-primary btn-lg" href="https://api.whatsapp.com/send?phone=5491164191450&text=Hola%2C%20te%20contacto%20desde%20tu%20web%20*dx.com*" target="_blank" role="button">CONTACTAR</a>
 		  </div>
 // -->
-		<section class="container">
+		<section class="container posicion">
 			<!-- INICIO NOTICIA #1 -->
-			<article class="row noticia">
+<!--			<article class="row noticia">
 				<div class="col-12 col-md-3 col-lg-4 noticia-img">
 					<img src="img/sorteo-libertadores.jpg" class="img-fluid">
 				</div>
@@ -140,9 +140,9 @@
 					<p>La Conmebol anunció la implementación del sistema VAR (asistencia arbitral por video) desde las semifinales de la actual Libertadores.</p>
 				</div>
 			</article>
-			<!-- FIN DE NOTICIA #1 -->
+-->			<!-- FIN DE NOTICIA #1 -->
 			<!-- INICIO NOTICIA #2 -->
-			<article class="row noticia">
+<!--			<article class="row noticia">
 				<div class="col-12 col-md-3 col-lg-4 noticia-img">
 					<img src="img/tickets-rusia-mundial.jpg" class="img-fluid">
 				</div>
@@ -152,9 +152,9 @@
 					<p>Hoy se abrió la venta al público de tickets, a través del sitio oficial de la FIFA. El proceso se dividirá en dos partes y los espectadores deberán solicitar una tarjeta de hincha 'Fan ID'.</p>
 				</div>
 			</article>
-			<!-- FIN DE NOTICIA #2 -->
+-->			<!-- FIN DE NOTICIA #2 -->
 			<!-- INICIO NOTICIA #3 -->
-			<article class="row noticia">
+<!--			<article class="row noticia">
 				<div class="col-12 col-md-3 col-lg-4 noticia-img">
 					<img src="img/firpo.jpg" class="img-fluid">
 				</div>
@@ -164,9 +164,9 @@
 					<p>El 14/9/1923 el boxeador argentino enfrento en Nueva York a Jack Dempsey, uno de los mejores pesos pesados de la historia.</p>
 				</div>
 			</article>
-			<!-- FIN DE NOTICIA #3 -->
+-->			<!-- FIN DE NOTICIA #3 -->
 			<!-- INICIO NOTICIA #4 -->
-			<article class="row noticia">
+<!--			<article class="row noticia">
 				<div class="col-12 col-md-3 col-lg-4 noticia-img">
 					<img src="img/buenos-aires.jpg" class="img-fluid">
 				</div>
@@ -177,7 +177,7 @@
 					</p>
 				</div>
 			</article>
-			<!-- FIN DE NOTICIA #4 -->
+	-->		<!-- FIN DE NOTICIA #4 -->
 		</section>
 
 <!--		<aside class="row">
@@ -193,5 +193,30 @@
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<script src="noticias.class.js"></script>
+
+		<script>
+
+/*			let noticiaX = new Noticia ("gano boca", "escritorio", "Despues de un arduo partido, le cobraron un penal en el minuto 93", "img/buenos-aires.jpg" )
+			noticiaX.Mostrar()
+			
+*/			fetch("https://api.npoint.io/bec1a80f80c2a0dea852").then(function(rta){
+				let objetos = rta.json()
+			}).then (function(objetos) {
+				return objetos.map( ({titulo, autor, cuerpo, imagen}) => new Noticia (titulo, autor, cuerpo, imagen) )
+			}).then (function(noticias) {
+				noticias.forEach(function(noticia){
+					noticia.Mostrar()
+				})
+			})
+ /*					.then( rta => rta.json() ) //convierte los datos de JSON a objetos
+					.then( objetos => objetos.map( ({Nombre, Stock, Precio, Imagen, Marca}) => new Producto (Nombre, Stock, Precio, Imagen, Marca) ) )  //Colección de objetos de tipo Producto. SINTAXIS ARROW FUNCTION ESPECIFICA PARA FINCION MAP Y CUANDO SOLO HAY UNA LINEA DE CODIGO RETURN
+					.then( productos => productos.filter( producto => producto.precio < 300 ) )
+					.then( productos => {
+						productos.forEach( producto => { 
+							producto.Mostrar()
+						})
+					})
+*/		</script>
 	</body>
 </html>

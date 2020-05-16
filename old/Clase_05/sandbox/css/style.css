@@ -1,0 +1,29 @@
+/* Hoja de Estilo Principal */
+p {
+    color: #413478;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: right;
+    line-height: 200%;
+}
+#titulo-principal {
+    color:blueviolet;
+    font-family: Arial;
+    font-size: 40px;
+    text-align: center;
+}
+.impares {
+    font-family: Tahoma;
+    color: #795548;
+    background-color: lightgreen;
+    text-align: left;
+}
+a {
+    color: #317815;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #000;
+}
+a:hover {
+    color: #000;
+    background-color: #317815;
+}

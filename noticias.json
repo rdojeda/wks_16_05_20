@@ -2,25 +2,25 @@
     "titulo": "La tecnología llega a la actual edición de la Libertadores",
     "autor" : "Joaquín Angeli",
     "cuerpo" : "En Córdoba arrancó la 1er etapa del 38° Rally de la Argentina",
-    "image" : "img/noticia1.pjg"
+    "image" : "img/sorteo-libertadores.jpg"
 },
 {
     "titulo": "Comenzó la venta de entradas para el Mundial de Rusia 2018",
     "autor": "Laura Smasnatta",
     "cuerpo": "Hoy se abrió la venta al público de tickets, a través del sitio oficial de la FIFA. El proceso se dividirá en dos partes y los espectadores deberán solicitar una tarjeta de hincha 'Fan ID'",
-    "image": "img/noticia2.pjg"
+    "image": "img/tickets-rusia-mundial.jpg"
 },
 {
     "titulo": "A 94 años del derechazo que convirtió en leyenda a Luis Ángel Firpo",
     "autor": "J Diego Di Marco",
     "cuerpo": "El 14/9/1923 el boxeador argentino enfrento en Nueva York a Jack Dempsey, uno de los mejores pesos pesados de la historia.",
-    "image": "img/noticia3.pjg"
+    "image": "img/firpo.jpg"
 },
 {
     "titulo": "Buenos Aires 2018 presentó su innovador proyecto de parques y de ceremonia inaugural ante el COI",
     "autor": "Melina Morales",
     "cuerpo": "El Comité Organizador de los Juegos de la Juventud presentó su concepto de parques ante la 131a sesión del Comité Olímpico Internacional (COI) que se realizó en Lima. La ceremonia inaugural se realizará al aire libre",
-    "image": "img/noticia4.pjg"
+    "image": "img/buenos-aires.jpg"
 }]
 
 
